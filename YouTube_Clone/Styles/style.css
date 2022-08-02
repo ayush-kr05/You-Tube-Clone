@@ -1,0 +1,174 @@
+body{
+    margin: 0;
+    background-color: #202020; 
+    color: white;
+}
+#navbar{
+    background-color: #202020; 
+    /* position: fixed; */
+}
+
+/* CSS for Upper NavBar */
+
+.upperNav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    border: 0.1px solid rgb(86, 86, 86);
+    padding: 0 20px;
+}
+.upperNav>div{
+    margin: 12px 0;
+}
+.search{
+    display: flex;
+    align-items: center;
+}
+.search button{
+    background-color: #313131;
+    width: 60px;
+    border: 1px solid #313131;   
+}
+button>img{
+   padding: 5px 2px;
+   width: 20px;
+   border: none;
+}
+#mic{
+    border-radius: 50px;
+    background-color: #121212;
+}
+#mic>img{
+    width: 15px;
+    padding: 7px 12px;
+}
+
+.searchVideo{
+    display: flex;
+    margin-right: 12px;
+}
+
+#VideoQuerry{
+    width: 500px;
+    background-color: #121212;
+    outline: none;
+    border: #313131;
+    margin: 0;
+    color: white;
+    font-size: 18px;
+    padding: 8px 15px 8px 20px;
+}
+#VideoQuerry:focus{
+    border: 1px solid blue;
+}
+
+.upnavLeft{
+    width: 200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: grey; */
+}
+
+.upnavLeft>img{
+    width: 25px;
+    height: 25px;
+}
+#myImg{
+    width: 33px;
+    height: 33px;
+    border-radius: 50px;
+}
+.YTicons{
+    width: 200px;
+    display: flex;
+    justify-content: space-around;
+}
+.YTicons img{
+    width: 20px;
+}
+#logo{
+    width: 100px;
+}
+
+/* CSS for Lower NavBar */
+
+#lowerNav{
+    display: flex;
+    width: 93%;
+    justify-content: space-around;
+    margin-left: 7%;
+    border-bottom: 1px solid rgb(86, 86, 86) ;
+    height: 30px;
+    padding: 12px 0;
+    overflow-x: hidden;
+}
+#lowerNav>p{
+    background-color: #373737;
+    padding: 7px 12px;
+    border-radius: 25px;
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif; 
+}
+
+/* CSS for Side Menu */
+#sideMenus{
+    display: flex;
+    flex-direction: column;
+   background-color: #202020;
+   width: 7%;
+   height: 93vh;
+   justify-content: space-around;
+   margin-top: -60px;
+   position: fixed;
+   font-family: Verdana, Geneva, Tahoma, sans-serif; 
+
+}
+#sideMenus img{
+    width: 25px;
+}
+
+#sideMenus>div{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+#SearchResult{
+    width: 93%;
+    height: 83vh;
+    margin-left: 7%;
+    overflow-y: scroll;
+    background-color: #181818;
+
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 10px;
+}
+
+#SearchResult>div{
+    /* background-color: rgb(26, 124, 211); */
+    margin: 10px;
+    height: 385px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.5s;
+}
+#SearchResult>div:hover{
+    transform: scale(1.1);
+}
+#SearchResult>div>img{
+    width: 100%;
+}
+.videoDet{
+    width: 90%;
+    
+}
+.videoDet>p{
+    color: rgb(177, 169, 169);
+}

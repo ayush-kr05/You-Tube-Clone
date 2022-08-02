@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="https://www.youtube.com/s/desktop/4a88d8c6/img/favicon_144x144.png" sizes="144x144">
+    <link rel="stylesheet" href="Styles/style.css">
+    <title>Play Video</title>
+</head>
+<style>
+    #PlayVideoContainer{
+        width: 100%;
+        height: 90vh;
+        background-color: #121212;
+        display: flex;
+        justify-content: center;
+    }
+    #myPlayVideo{
+        background-color: #121212;
+        width: 80%;
+    }
+</style>
+<body>
+    <section id="navbar">
+        <div class="upperNav">
+            <div class="YTicons">
+                <img src="Images/09.png" alt="">
+                <img src="Images/navbarYoutubeIcon.png" id="logo">
+            </div>
+            <div class="search">
+                <div class="searchVideo">
+                    <input type="text" id="VideoQuerry" placeholder="Search">
+                    <button onclick="SearchResult()"><img src="Images/01.png"></button>
+                </div>
+                <div id="mic">
+                    <img src="Images/11.png" alt="">
+                </div>
+            </div>
+            <div class="upnavLeft">
+                <img src="Images/06.png" alt="">
+                <img src="Images/10.png" alt="">
+                <img src="Images/04.png" alt="">
+                <img src="https://media-exp1.licdn.com/dms/image/C5603AQHx9ooaZ8nqEA/profile-displayphoto-shrink_400_400/0/1636793264405?e=1664409600&v=beta&t=77zal__r8Xp0G1zzNIU-I6PxX-TDgrcEMWmwvhJrNfQ" id="myImg">
+            </div>
+        </div>
+    </section>
+    <div id="PlayVideoContainer">
+        <iframe id="myPlayVideo" title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+    </div>
+    
+</body>
+<script>
+    let ID = localStorage.getItem("Id");
+    displayMyVideo(ID);
+    function displayMyVideo(videoNameId){
+        document.getElementById("myPlayVideo").setAttribute("src", `https://www.youtube.com/embed/${videoNameId}`)
+    }
+</script>
+</html>
